@@ -1,0 +1,14 @@
+{
+	"appId": "com.vishwajitjadhav.expensetracker",
+	"appName": "Daily Expense Tracker Pro",
+	"webDir": "dist",
+	"bundledWebRuntime": false,
+	"server": {
+		"androidScheme": "https"
+	},
+	"android": {
+		"allowMixedContent": true,
+		"captureInput": true,
+		"webContentsDebuggingEnabled": true
+	}
+}
