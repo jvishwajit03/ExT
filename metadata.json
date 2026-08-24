@@ -1,0 +1,6 @@
+{
+  "name": "Daily Expense Tracker Pro",
+  "description": "Smart daily expense and money manager with real-time analytics, multiple currencies, CSV export, and Android APK & PWA installation support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

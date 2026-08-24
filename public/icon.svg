@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E1B4B" />
+      <stop offset="100%" stop-color="#0B0F19" />
+    </linearGradient>
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+    <linearGradient id="emeraldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bg)" stroke="rgba(255,255,255,0.1)" stroke-width="8"/>
+  <circle cx="256" cy="256" r="160" fill="url(#primaryGlow)" opacity="0.12" filter="url(#glow)"/>
+  <!-- Wallet / Card Icon Shape -->
+  <g transform="translate(106, 126)">
+    <!-- Back Wallet -->
+    <rect x="0" y="40" width="300" height="200" rx="32" fill="#1E293B" stroke="url(#primaryGlow)" stroke-width="8"/>
+    <!-- Wallet Flap -->
+    <path d="M 0 70 Q 150 130 300 70 L 300 40 Q 150 0 0 40 Z" fill="#334155" opacity="0.8"/>
+    <!-- Coin / Growth Badge -->
+    <circle cx="230" cy="140" r="38" fill="url(#emeraldGlow)" filter="url(#glow)"/>
+    <text x="230" y="152" font-family="-apple-system, system-ui, sans-serif" font-size="34" font-weight="900" fill="#FFFFFF" text-anchor="middle">₹</text>
+    <!-- Card Accent Lines -->
+    <rect x="36" y="90" width="100" height="12" rx="6" fill="#64748B"/>
+    <rect x="36" y="116" width="60" height="10" rx="5" fill="#475569"/>
+    <!-- Trend Arrow -->
+    <path d="M 36 180 L 80 145 L 115 165 L 170 120" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="170,120 152,120 170,138" fill="#38BDF8"/>
+  </g>
+</svg>
